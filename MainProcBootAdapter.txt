@@ -1,0 +1,2526 @@
+# classes3.dex
+
+.class public final Lcom/transsion/phoenix/MainProcBootAdapter;
+.super Ljava/lang/Object;
+.source "r8-map-id-2e0d1f06bad179e760052fef16763b0e3d00e949481b94f8e27d43ebd5abd976"
+
+# interfaces
+.implements Lyy8;
+
+
+# annotations
+.annotation build Lcom/tencent/mtt/proguard/KeepAll;
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0007\u0018\u0000 B2\u00020\u0001:\u0001CB\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u0017\u0010\t\u001a\u00020\b2\u0006\u0010\u0007\u001a\u00020\u0006H\u0016¢\u0006\u0004\b\t\u0010\nJ\u000f\u0010\u000b\u001a\u00020\bH\u0016¢\u0006\u0004\b\u000b\u0010\fJ\u000f\u0010\r\u001a\u00020\bH\u0016¢\u0006\u0004\b\r\u0010\fJ\u0017\u0010\u0010\u001a\u00020\b2\u0006\u0010\u000f\u001a\u00020\u000eH\u0016¢\u0006\u0004\b\u0010\u0010\u0011J\u0017\u0010\u0012\u001a\u00020\b2\u0006\u0010\u000f\u001a\u00020\u000eH\u0016¢\u0006\u0004\b\u0012\u0010\u0011J\u0017\u0010\u0013\u001a\u00020\b2\u0006\u0010\u000f\u001a\u00020\u000eH\u0016¢\u0006\u0004\b\u0013\u0010\u0011J\u0017\u0010\u0016\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u0014H\u0016¢\u0006\u0004\b\u0016\u0010\u0017J\u0017\u0010\u0018\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u0014H\u0016¢\u0006\u0004\b\u0018\u0010\u0017J!\u0010\u001b\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u00142\b\u0010\u001a\u001a\u0004\u0018\u00010\u0019H\u0016¢\u0006\u0004\b\u001b\u0010\u001cJ\u0017\u0010\u001d\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u000eH\u0016¢\u0006\u0004\b\u001d\u0010\u0011J\u0017\u0010\u001e\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u0014H\u0016¢\u0006\u0004\b\u001e\u0010\u0017J\u0017\u0010\u001f\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u0014H\u0016¢\u0006\u0004\b\u001f\u0010\u0017J\u0017\u0010 \u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u0014H\u0016¢\u0006\u0004\b \u0010\u0017J\u0017\u0010!\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u0014H\u0016¢\u0006\u0004\b!\u0010\u0017J!\u0010%\u001a\u00020$2\u0006\u0010\u0015\u001a\u00020\u00142\b\u0010#\u001a\u0004\u0018\u00010\"H\u0016¢\u0006\u0004\b%\u0010&J\u0017\u0010\'\u001a\u00020$2\u0006\u0010\u0015\u001a\u00020\u0014H\u0016¢\u0006\u0004\b\'\u0010(J\u001f\u0010*\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u0010)\u001a\u00020$H\u0016¢\u0006\u0004\b*\u0010+J\u0017\u0010,\u001a\u00020$2\u0006\u0010\u0015\u001a\u00020\u0014H\u0016¢\u0006\u0004\b,\u0010(J!\u0010/\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u00142\b\u0010.\u001a\u0004\u0018\u00010-H\u0016¢\u0006\u0004\b/\u00100J\u0017\u00101\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u0014H\u0016¢\u0006\u0004\b1\u0010\u0017J)\u00106\u001a\u00020$2\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u00103\u001a\u0002022\b\u00105\u001a\u0004\u0018\u000104H\u0016¢\u0006\u0004\b6\u00107J)\u00108\u001a\u00020$2\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u00103\u001a\u0002022\b\u00105\u001a\u0004\u0018\u000104H\u0016¢\u0006\u0004\b8\u00107J!\u00109\u001a\u00020$2\u0006\u0010\u0015\u001a\u00020\u00142\b\u00105\u001a\u0004\u0018\u000104H\u0016¢\u0006\u0004\b9\u0010:J\u001f\u0010<\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u0010;\u001a\u000202H\u0016¢\u0006\u0004\b<\u0010=R\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0003\u0010>R\u0018\u0010@\u001a\u0004\u0018\u00010?8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b@\u0010A¨\u0006D"
+    }
+    d2 = {
+        "Lcom/transsion/phoenix/MainProcBootAdapter;",
+        "Lyy8;",
+        "Lozh;",
+        "taskChainConfig",
+        "<init>",
+        "(Lozh;)V",
+        "Landroid/content/Context;",
+        "context",
+        "",
+        "attachBaseContext",
+        "(Landroid/content/Context;)V",
+        "onApplicationCreate",
+        "()V",
+        "onApplicationTerminate",
+        "Landroid/app/Activity;",
+        "launchActivity",
+        "onLaunchActivityCreatePre",
+        "(Landroid/app/Activity;)V",
+        "onLaunchActivityCreateAft",
+        "onLaunchActivityPause",
+        "Lcom/cloudview/activity/PHXActivityBase;",
+        "mainActivity",
+        "onMainActivityCreatePre",
+        "(Lcom/cloudview/activity/PHXActivityBase;)V",
+        "onMainActivityCreateAft",
+        "Landroid/content/Intent;",
+        "intent",
+        "onMainActivityNewIntent",
+        "(Lcom/cloudview/activity/PHXActivityBase;Landroid/content/Intent;)V",
+        "onMainActivityStart",
+        "onMainActivityResume",
+        "onMainActivityPause",
+        "onMainActivityStop",
+        "onMainActivityDestroy",
+        "Landroid/view/MotionEvent;",
+        "ev",
+        "",
+        "onMainActivityDispatchTouchEvent",
+        "(Lcom/cloudview/activity/PHXActivityBase;Landroid/view/MotionEvent;)Z",
+        "onMainActivityResult",
+        "(Lcom/cloudview/activity/PHXActivityBase;)Z",
+        "hasFocus",
+        "onMainActivityWindowFocusChanged",
+        "(Lcom/cloudview/activity/PHXActivityBase;Z)V",
+        "onMainActivitySearchRequested",
+        "Landroid/content/res/Configuration;",
+        "newConfig",
+        "onMainActivityConfigurationChanged",
+        "(Lcom/cloudview/activity/PHXActivityBase;Landroid/content/res/Configuration;)V",
+        "onMainActivityRestart",
+        "",
+        "keyCode",
+        "Landroid/view/KeyEvent;",
+        "event",
+        "onMainActivityKeyDown",
+        "(Lcom/cloudview/activity/PHXActivityBase;ILandroid/view/KeyEvent;)Z",
+        "onMainActivityKeyUp",
+        "onMainActivityKeyEvent",
+        "(Lcom/cloudview/activity/PHXActivityBase;Landroid/view/KeyEvent;)Z",
+        "layoutResID",
+        "onMainActivitySetContentView",
+        "(Lcom/cloudview/activity/PHXActivityBase;I)V",
+        "Lozh;",
+        "Lnzh;",
+        "taskChain",
+        "Lnzh;",
+        "Companion",
+        "c6b",
+        "workspace:phx_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x4,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lc6b;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private static final FORBIDDEN_COUNTRY_CODES:[Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public static final MAIN_PROCESS_MAIN_ACTIVITY:Ljava/lang/String; = "com.tencent.mtt.MainActivity"
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public static final TAG:Ljava/lang/String; = "BootAdapter"
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private static sBlockType:I
+
+
+# instance fields
+.field private taskChain:Lnzh;
+
+.field private final taskChainConfig:Lozh;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 4
+
+    .line 1
+    new-instance v0, Lc6b;
+
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    sput-object v0, Lcom/transsion/phoenix/MainProcBootAdapter;->Companion:Lc6b;
+
+    .line 8
+    const-string v0, "HK"
+
+    .line 10
+    const-string v1, "MO"
+
+    .line 12
+    const-string v2, "CN"
+
+    .line 14
+    const-string v3, "TW"
+
+    .line 16
+    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
+
+    .line 19
+    move-result-object v0
+
+    .line 20
+    sput-object v0, Lcom/transsion/phoenix/MainProcBootAdapter;->FORBIDDEN_COUNTRY_CODES:[Ljava/lang/String;
+
+    .line 22
+    return-void
+.end method
+
+.method public constructor <init>(Lozh;)V
+    .registers 2
+    .param p1  # Lozh;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput-object p1, p0, Lcom/transsion/phoenix/MainProcBootAdapter;->taskChainConfig:Lozh;
+
+    .line 6
+    return-void
+.end method
+
+.method public static synthetic a(Landroid/app/Activity;)Z
+    .registers 1
+
+    .line 1
+    invoke-static {p0}, Lcom/transsion/phoenix/MainProcBootAdapter;->onLaunchActivityPause$lambda$0(Landroid/app/Activity;)Z
+
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static final synthetic access$getFORBIDDEN_COUNTRY_CODES$cp()[Ljava/lang/String;
+    .registers 1
+
+    .line 1
+    sget-object v0, Lcom/transsion/phoenix/MainProcBootAdapter;->FORBIDDEN_COUNTRY_CODES:[Ljava/lang/String;
+
+    .line 3
+    return-object v0
+.end method
+
+.method private static final onLaunchActivityPause$lambda$0(Landroid/app/Activity;)Z
+    .registers 1
+
+    .line 1
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+
+    .line 4
+    const/4 p0, 0x0
+
+    .line 5
+    return p0
+.end method
+
+
+# virtual methods
+.method public attachBaseContext(Landroid/content/Context;)V
+    .registers 3
+    .param p1  # Landroid/content/Context;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    iget-object p1, p0, Lcom/transsion/phoenix/MainProcBootAdapter;->taskChainConfig:Lozh;
+
+    .line 3
+    iget-object v0, p1, Lozh;->a:Li19;
+
+    .line 5
+    iget-object p1, p1, Lozh;->b:Lj19;
+
+    .line 7
+    invoke-interface {v0, p1}, Li19;->a(Lj19;)Lnzh;
+
+    .line 10
+    move-result-object p1
+
+    .line 11
+    iput-object p1, p0, Lcom/transsion/phoenix/MainProcBootAdapter;->taskChain:Lnzh;
+
+    .line 13
+    invoke-virtual {p1}, Lnzh;->b()Lnzh;
+
+    .line 16
+    invoke-virtual {p1}, Lnzh;->c()V
+
+    .line 19
+    return-void
+.end method
+
+.method public onApplicationCreate()V
+    .registers 7
+
+    .line 1
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget-wide v1, v0, Lp42;->b:J
+
+    .line 7
+    const-wide/16 v3, 0x0
+
+    .line 9
+    cmp-long v1, v1, v3
+
+    .line 11
+    if-gtz v1, :cond_12
+
+    .line 13
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    .line 16
+    move-result-wide v1
+
+    .line 17
+    iput-wide v1, v0, Lp42;->b:J
+
+    .line 19
+    :cond_12
+    iget-object v0, p0, Lcom/transsion/phoenix/MainProcBootAdapter;->taskChain:Lnzh;
+
+    .line 21
+    if-eqz v0, :cond_19
+
+    .line 23
+    invoke-virtual {v0}, Lnzh;->a()V
+    .line 26
+    :cond_19
+    iget-object p0, p0, Lcom/transsion/phoenix/MainProcBootAdapter;->taskChain:Lnzh;
+
+    .line 28
+    if-eqz p0, :cond_20
+
+    .line 30
+    invoke-virtual {p0}, Lnzh;->d()V
+
+    .line 33
+    :cond_20
+    sget-object p0, Lhb4;->a:Lhb4;
+
+    .line 35
+    monitor-enter p0
+
+    .line 36
+    :try_start_23
+    sget-boolean v0, Lhb4;->b:Z
+    :try_end_25
+    .catchall {:try_start_23 .. :try_end_25} :catchall_6d
+
+    .line 38
+    const/4 v1, 0x0
+
+    .line 39
+    if-eqz v0, :cond_2a
+
+    .line 41
+    monitor-exit p0
+
+    .line 42
+    goto :goto_66
+
+    .line 43
+    :cond_2a
+    const/4 v0, 0x1
+
+    .line 44
+    :try_start_2b
+    sput-boolean v0, Lhb4;->b:Z
+
+    .line 46
+    invoke-static {}, Lhb4;->b()Z
+
+    .line 49
+    move-result v2
+
+    .line 50
+    if-eqz v2, :cond_35
+
+    .line 52
+    const/4 v2, -0x1
+
+    .line 53
+    goto :goto_36
+
+    .line 54
+    :cond_35
+    move v2, v0
+
+    .line 55
+    :goto_36
+    sput v2, Lhb4;->c:I
+
+    .line 57
+    sget-object v2, Lhb4;->d:Lqc1;
+
+    .line 59
+    sget-object v3, Lww9;->a:Lww9;
+
+    .line 61
+    const-string v4, "mode_night"
+
+    .line 63
+    sget v5, Lhb4;->c:I
+
+    .line 65
+    invoke-virtual {v3, v4, v5}, Lyh2;->getInt(Ljava/lang/String;I)I
+
+    .line 68
+    move-result v3
+
+    .line 69
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 72
+    if-eq v3, v0, :cond_5f
+
+    .line 74
+    const/4 v4, 0x2
+
+    .line 75
+    if-eq v3, v4, :cond_60
+
+    .line 77
+    sget-object v4, Lgx3;->a:Landroid/content/Context;
+
+    .line 79
+    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 82
+    move-result-object v4
+
+    .line 83
+    invoke-virtual {v4}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    .line 86
+    move-result-object v4
+
+    .line 87
+    iget v4, v4, Landroid/content/res/Configuration;->uiMode:I
+
+    .line 89
+    and-int/lit8 v4, v4, 0x30
+
+    .line 91
+    const/16 v5, 0x20
+
+    .line 93
+    if-ne v4, v5, :cond_5f
+
+    .line 95
+    goto :goto_60
+
+    .line 96
+    :cond_5f
+    move v0, v1
+
+    .line 97
+    :cond_60
+    :goto_60
+    iput-boolean v0, v2, Lqc1;->b:Z
+
+    .line 99
+    invoke-virtual {v2, v3}, Lqc1;->f(I)V
+    :try_end_65
+    .catchall {:try_start_2b .. :try_end_65} :catchall_6d
+
+    .line 102
+    monitor-exit p0
+
+    .line 103
+    :goto_66
+    invoke-static {v1}, Lun5;->K(Z)V
+
+    .line 106
+    invoke-static {}, Lnz;->d0()V
+
+    .line 109
+    return-void
+
+    .line 110
+    :catchall_6d
+    move-exception v0
+
+    .line 111
+    :try_start_6e
+    monitor-exit p0
+    :try_end_6f
+    .catchall {:try_start_6e .. :try_end_6f} :catchall_6d
+
+    .line 112
+    throw v0
+.end method
+
+.method public onApplicationTerminate()V
+    .registers 3
+
+    .line 1
+    invoke-static {}, Ljqh;->d()Ljqh;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    iget-object v0, p0, Ljqh;->f:Ljava/lang/Object;
+
+    .line 7
+    check-cast v0, Ljava/util/HashSet;
+
+    .line 9
+    monitor-enter v0
+
+    .line 10
+    :try_start_9
+    iget-object v1, p0, Ljqh;->f:Ljava/lang/Object;
+
+    .line 12
+    check-cast v1, Ljava/util/HashSet;
+
+    .line 14
+    invoke-virtual {v1}, Ljava/util/HashSet;->clear()V
+
+    .line 17
+    monitor-exit v0
+    :try_end_11
+    .catchall {:try_start_9 .. :try_end_11} :catchall_15
+
+    .line 18
+    const/4 v0, 0x0
+
+    .line 19
+    iput-boolean v0, p0, Ljqh;->c:Z
+
+    .line 21
+    return-void
+
+    .line 22
+    :catchall_15
+    move-exception p0
+
+    .line 23
+    :try_start_16
+    monitor-exit v0
+    :try_end_17
+    .catchall {:try_start_16 .. :try_end_17} :catchall_15
+
+    .line 24
+    throw p0
+.end method
+
+.method public onLaunchActivityCreateAft(Landroid/app/Activity;)V
+    .registers 5
+    .param p1  # Landroid/app/Activity;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    iget-object p0, p0, Lp42;->d:Ljava/lang/Object;
+
+    .line 7
+    check-cast p0, Ldsc;
+
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    if-eqz p0, :cond_14
+
+    .line 12
+    iget-object p0, p0, Ldsc;->c:Ljava/lang/Object;
+
+    .line 14
+    check-cast p0, Lu6;
+
+    .line 16
+    if-eqz p0, :cond_14
+
+    .line 18
+    instance-of p0, p0, Lws4;
+
+    .line 20
+    goto :goto_15
+
+    .line 21
+    :cond_14
+    move p0, v0
+
+    .line 22
+    :goto_15
+    const/high16 v1, 0x10000
+
+    .line 24
+    if-eqz p0, :cond_36
+
+    .line 26
+    new-instance p0, Landroid/content/Intent;
+
+    .line 28
+    invoke-direct {p0}, Landroid/content/Intent;-><init>()V
+
+    .line 31
+    invoke-virtual {p0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    .line 34
+    invoke-static {}, Lgx3;->a()Ljava/lang/String;
+
+    .line 37
+    move-result-object v0
+
+    .line 38
+    const-string v1, "com.proj.sun.activity.LaunchActivity"
+
+    .line 40
+    invoke-virtual {p0, v0, v1}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 43
+    :try_start_2a
+    sget-object v0, Lnqf;->c:Lkqf;
+
+    .line 45
+    invoke-virtual {p1, p0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    :try_end_2f
+    .catchall {:try_start_2a .. :try_end_2f} :catchall_30
+
+    .line 48
+    goto :goto_32
+
+    .line 49
+    :catchall_30
+    sget-object p0, Lnqf;->c:Lkqf;
+
+    .line 51
+    :goto_32
+    invoke-static {}, Lare;->Z()V
+
+    .line 54
+    return-void
+
+    .line 55
+    :cond_36
+    :try_start_36
+    sget-object p0, Lnqf;->c:Lkqf;
+
+    .line 57
+    invoke-virtual {p1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    .line 60
+    move-result-object p0
+
+    .line 61
+    if-eqz p0, :cond_66
+
+    .line 63
+    invoke-virtual {p0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    .line 66
+    const-string v1, "bootAliasName"
+
+    .line 68
+    invoke-virtual {p0}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
+
+    .line 71
+    move-result-object v2
+
+    .line 72
+    if-eqz v2, :cond_4f
+
+    .line 74
+    invoke-virtual {v2}, Landroid/content/ComponentName;->getClassName()Ljava/lang/String;
+
+    .line 77
+    move-result-object v2
+
+    .line 78
+    if-nez v2, :cond_51
+
+    .line 80
+    :cond_4f
+    const-string v2, ""
+
+    .line 82
+    :cond_51
+    invoke-virtual {p0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 85
+    const-string v1, "com.transsion.phoenix"
+
+    .line 87
+    const-string v2, "com.tencent.mtt.MainActivity"
+
+    .line 89
+    invoke-virtual {p0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 92
+    sget-object v1, Lla;->r:Ljava/lang/String;
+
+    .line 94
+    invoke-virtual {p0, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    .line 97
+    const/high16 v0, 0x8000000
+
+    .line 99
+    invoke-virtual {p0, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 102
+    goto :goto_67
+
+    .line 103
+    :cond_66
+    const/4 p0, 0x0
+
+    .line 104
+    :goto_67
+    invoke-virtual {p1, p0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+
+    .line 107
+    sget-object p0, Lkotlin/Unit;->a:Lkotlin/Unit;
+    :try_end_6c
+    .catchall {:try_start_36 .. :try_end_6c} :catchall_6d
+
+    .line 109
+    goto :goto_76
+
+    .line 110
+    :catchall_6d
+    move-exception p0
+
+    .line 111
+    sget-object p1, Lnqf;->c:Lkqf;
+
+    .line 113
+    new-instance p1, Llqf;
+
+    .line 115
+    invoke-direct {p1, p0}, Llqf;-><init>(Ljava/lang/Throwable;)V
+
+    .line 118
+    move-object p0, p1
+
+    .line 119
+    :goto_76
+    invoke-static {p0}, Lnqf;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    .line 122
+    return-void
+.end method
+
+.method public onLaunchActivityCreatePre(Landroid/app/Activity;)V
+    .registers 2
+    .param p1  # Landroid/app/Activity;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 p0, 0x1
+
+    .line 2
+    sput-boolean p0, Lejc;->c:Z
+
+    .line 4
+    sput-boolean p0, Lejc;->d:Z
+
+    .line 6
+    return-void
+.end method
+
+.method public onLaunchActivityPause(Landroid/app/Activity;)V
+    .registers 4
+    .param p1  # Landroid/app/Activity;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-static {}, Landroid/os/Looper;->myQueue()Landroid/os/MessageQueue;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    new-instance v0, Lrm6;
+
+    .line 7
+    const/4 v1, 0x1
+
+    .line 8
+    invoke-direct {v0, p1, v1}, Lrm6;-><init>(Ljava/lang/Object;I)V
+
+    .line 11
+    invoke-virtual {p0, v0}, Landroid/os/MessageQueue;->addIdleHandler(Landroid/os/MessageQueue$IdleHandler;)V
+
+    .line 14
+    return-void
+.end method
+
+.method public onMainActivityConfigurationChanged(Lcom/cloudview/activity/PHXActivityBase;Landroid/content/res/Configuration;)V
+    .registers 3
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-virtual {p0}, Lp42;->p()Z
+
+    .line 8
+    move-result p0
+
+    .line 9
+    if-nez p0, :cond_b
+
+    .line 11
+    return-void
+
+    .line 12
+    :cond_b
+    sget-object p0, Lhb4;->a:Lhb4;
+
+    .line 14
+    invoke-static {p2}, Lhb4;->f(Landroid/content/res/Configuration;)V
+
+    .line 17
+    return-void
+.end method
+
+.method public onMainActivityCreateAft(Lcom/cloudview/activity/PHXActivityBase;)V
+    .registers 6
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget-object p0, Lcom/transsion/phoenix/MainProcBootAdapter;->Companion:Lc6b;
+
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    invoke-static {}, Lgg1;->a()Lgg1;
+
+    .line 9
+    move-result-object p0
+
+    .line 10
+    const-string v0, "key_forbidden_mode"
+
+    .line 12
+    const/4 v1, 0x1
+
+    .line 13
+    invoke-virtual {p0, v0, v1}, Lyh2;->getInt(Ljava/lang/String;I)I
+
+    .line 16
+    move-result p0
+
+    .line 17
+    const/4 v0, 0x4
+
+    .line 18
+    const/4 v2, 0x2
+
+    .line 19
+    const/16 v3, 0xa
+
+    .line 21
+    if-ne p0, v0, :cond_17
+
+    .line 23
+    goto :goto_7e
+
+    .line 24
+    :cond_17
+    sget-object p0, Lcom/cloudview/basicinfo/locale/LocaleInfoManager;->i:Lcom/cloudview/basicinfo/locale/LocaleInfoManager;
+
+    .line 26
+    invoke-virtual {p0}, Lcom/cloudview/basicinfo/locale/LocaleInfoManager;->b()Ljava/lang/String;
+
+    .line 29
+    move-result-object p0
+
+    .line 30
+    if-eqz p0, :cond_26
+
+    .line 32
+    sget-object v0, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+
+    .line 34
+    invoke-virtual {p0, v0}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    .line 37
+    move-result-object p0
+
+    .line 38
+    goto :goto_27
+
+    .line 39
+    :cond_26
+    const/4 p0, 0x0
+
+    .line 40
+    :goto_27
+    invoke-static {}, Lcom/transsion/phoenix/MainProcBootAdapter;->access$getFORBIDDEN_COUNTRY_CODES$cp()[Ljava/lang/String;
+
+    .line 43
+    move-result-object v0
+
+    .line 44
+    invoke-static {p0, v0}, Lhx0;->r(Ljava/lang/Object;[Ljava/lang/Object;)Z
+
+    .line 47
+    move-result p0
+
+    .line 48
+    if-eqz p0, :cond_3e
+
+    .line 50
+    invoke-static {}, Lgg1;->a()Lgg1;
+
+    .line 53
+    move-result-object p0
+
+    .line 54
+    const-string v0, "key_forbidden_mode"
+
+    .line 56
+    invoke-virtual {p0, v0, v1}, Lyh2;->getInt(Ljava/lang/String;I)I
+
+    .line 59
+    move-result p0
+
+    .line 60
+    if-eq p0, v2, :cond_3e
+
+    .line 62
+    goto :goto_7e
+
+    .line 63
+    :cond_3e
+    invoke-static {}, Lgg1;->a()Lgg1;
+
+    .line 66
+    move-result-object p0
+
+    .line 67
+    const-string v0, "boot_need_privacy_policy"
+
+    .line 69
+    invoke-virtual {p0, v0, v1}, Lyh2;->getBoolean(Ljava/lang/String;Z)Z
+
+    .line 72
+    move-result p0
+
+    .line 73
+    if-eqz p0, :cond_7d
+
+    .line 75
+    invoke-static {}, Lut4;->q()Z
+
+    .line 78
+    move-result p0
+
+    .line 79
+    if-nez p0, :cond_7b
+
+    .line 81
+    sget-object p0, Lkyj;->i:Lm8f;
+
+    .line 83
+    if-eqz p0, :cond_75
+
+    .line 85
+    sget-object p0, Lfq2;->b:Lfq2;
+
+    .line 87
+    invoke-virtual {p0}, Lfq2;->a()Z
+
+    .line 90
+    move-result p0
+
+    .line 91
+    if-nez p0, :cond_7b
+
+    .line 93
+    invoke-static {}, Ltp2;->k0()Ljava/lang/String;
+
+    .line 96
+    move-result-object p0
+
+    .line 97
+    const-string v0, "30017"
+
+    .line 99
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 102
+    move-result p0
+
+    .line 103
+    if-nez p0, :cond_7b
+
+    .line 105
+    invoke-static {}, Ltp2;->k0()Ljava/lang/String;
+
+    .line 108
+    move-result-object p0
+
+    .line 109
+    const-string v0, "30117"
+
+    .line 111
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 114
+    move-result p0
+
+    .line 115
+    if-eqz p0, :cond_7d
+
+    .line 117
+    goto :goto_7b
+
+    .line 118
+    :cond_75
+    const-string p0, "KernelConfigs must be init and channel type must set!"
+
+    .line 120
+    invoke-static {p0}, Lt1d;->b(Ljava/lang/String;)V
+
+    .line 123
+    return-void
+
+    .line 124
+    :cond_7b
+    :goto_7b
+    const/4 v3, 0x5
+
+    .line 125
+    goto :goto_7e
+
+    .line 126
+    :cond_7d
+    const/4 v3, 0x0
+
+    .line 127
+    :goto_7e
+    sput v3, Lcom/transsion/phoenix/MainProcBootAdapter;->sBlockType:I
+
+    .line 129
+    if-eqz v3, :cond_b6
+
+    .line 131
+    invoke-virtual {p1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    .line 134
+    move-result-object p0
+
+    .line 135
+    sget v0, Lcom/transsion/phoenix/MainProcBootAdapter;->sBlockType:I
+
+    .line 137
+    new-instance v1, Landroid/content/Intent;
+
+    .line 139
+    sget-object v2, Lla;->g:Ljava/lang/String;
+
+    .line 141
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 144
+    const-string v2, "entrance_intent"
+
+    .line 146
+    invoke-virtual {v1, v2, p0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 149
+    const-string v2, "block_type"
+
+    .line 151
+    invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    .line 154
+    const/high16 v0, 0x10000000
+
+    .line 156
+    invoke-virtual {v1, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 159
+    invoke-static {}, Lgx3;->a()Ljava/lang/String;
+
+    .line 162
+    move-result-object v0
+
+    .line 163
+    invoke-virtual {v1, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 166
+    sget-object v0, Lgx3;->a:Landroid/content/Context;
+
+    .line 168
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    .line 171
+    sget-object v0, Lcom/tencent/mtt/block/BlockActivity;->Companion:Les1;
+
+    .line 173
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 176
+    invoke-static {p0}, Lcom/tencent/mtt/block/BlockActivity;->access$setSOriIntent$cp(Landroid/content/Intent;)V
+
+    .line 179
+    invoke-virtual {p1}, Landroid/app/Activity;->finish()V
+
+    .line 182
+    return-void
+
+    .line 183
+    :cond_b6
+    sget-object p0, Luc;->h:Luc;
+
+    .line 185
+    iput-object p1, p0, Luc;->c:Lcom/cloudview/activity/PHXActivityBase;
+
+    .line 187
+    sget-object p0, Lfk;->h:Lfk;
+
+    .line 189
+    if-nez p0, :cond_da
+
+    .line 191
+    sget-object p0, Lfk;->i:Ljava/lang/Object;
+
+    .line 193
+    monitor-enter p0
+
+    .line 194
+    :try_start_c1
+    sget-object v0, Lfk;->h:Lfk;
+
+    .line 196
+    if-nez v0, :cond_d4
+
+    .line 198
+    new-instance v0, Lfk;
+
+    .line 200
+    invoke-direct {v0, v2}, Lfk;-><init>(I)V
+
+    .line 203
+    new-instance v1, Leod;
+
+    .line 205
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    .line 208
+    iput-object v1, v0, Lfk;->c:Ljava/lang/Object;
+
+    .line 210
+    goto :goto_d4
+
+    .line 211
+    :catchall_d2
+    move-exception p1
+
+    .line 212
+    goto :goto_d8
+
+    .line 213
+    :cond_d4
+    :goto_d4
+    sput-object v0, Lfk;->h:Lfk;
+    :try_end_d6
+    .catchall {:try_start_c1 .. :try_end_d6} :catchall_d2
+
+    .line 215
+    monitor-exit p0
+
+    .line 216
+    goto :goto_da
+
+    .line 217
+    :goto_d8
+    monitor-exit p0
+
+    .line 218
+    throw p1
+
+    .line 219
+    :cond_da
+    :goto_da
+    sget-object p0, Lfk;->h:Lfk;
+
+    .line 221
+    new-instance v0, Ls33;
+
+    .line 223
+    const/16 v1, 0xf
+
+    .line 225
+    invoke-direct {v0, v1}, Ls33;-><init>(I)V
+
+    .line 228
+    iput-object v0, p0, Lfk;->c:Ljava/lang/Object;
+
+    .line 230
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 233
+    move-result-object p0
+
+    .line 234
+    iget-wide v0, p0, Lp42;->c:J
+
+    .line 236
+    const-wide/16 v2, 0x0
+
+    .line 238
+    cmp-long v0, v0, v2
+
+    .line 240
+    if-gtz v0, :cond_f7
+
+    .line 242
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    .line 245
+    move-result-wide v0
+
+    .line 246
+    iput-wide v0, p0, Lp42;->c:J
+
+    .line 248
+    :cond_f7
+    new-instance v0, Landroid/os/Message;
+
+    .line 250
+    invoke-direct {v0}, Landroid/os/Message;-><init>()V
+
+    .line 253
+    const/16 v1, 0x3e8
+
+    .line 255
+    iput v1, v0, Landroid/os/Message;->what:I
+
+    .line 257
+    iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    .line 259
+    iget-object p0, p0, Lp42;->d:Ljava/lang/Object;
+
+    .line 261
+    check-cast p0, Ldsc;
+
+    .line 263
+    invoke-virtual {p0, v0}, Ldsc;->j(Landroid/os/Message;)V
+
+    .line 266
+    invoke-static {}, Ljxe;->getInstance()Ljxe;
+
+    .line 269
+    move-result-object p0
+
+    .line 270
+    const-class v0, Lcom/verizontal/phx/installmeasure/branch/IInstallMeasureService;
+
+    .line 272
+    invoke-virtual {p0, v0}, Ljxe;->getService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 275
+    move-result-object p0
+
+    .line 276
+    check-cast p0, Lcom/verizontal/phx/installmeasure/branch/IInstallMeasureService;
+
+    .line 278
+    if-eqz p0, :cond_121
+
+    .line 280
+    invoke-virtual {p1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    .line 283
+    :try_start_11a
+    invoke-static {}, Lcom/appsflyer/AppsFlyerLib;->getInstance()Lcom/appsflyer/AppsFlyerLib;
+
+    .line 286
+    move-result-object p0
+
+    .line 287
+    invoke-virtual {p0, p1}, Lcom/appsflyer/AppsFlyerLib;->start(Landroid/content/Context;)V
+    :try_end_121
+    .catchall {:try_start_11a .. :try_end_121} :catchall_121
+
+    .line 290
+    :catchall_121
+    :cond_121
+    invoke-static {}, Ljxe;->getInstance()Ljxe;
+
+    .line 293
+    move-result-object p0
+
+    .line 294
+    const-class p1, Lcom/verizontal/phx/dynamiclink/deeplink/IDeepLinkService;
+
+    .line 296
+    invoke-virtual {p0, p1}, Ljxe;->getService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 299
+    move-result-object p0
+
+    .line 300
+    check-cast p0, Lcom/verizontal/phx/dynamiclink/deeplink/IDeepLinkService;
+
+    .line 302
+    check-cast p0, Lcom/cloudview/phx/deeplink/DeepLinkManager;
+
+    .line 304
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 307
+    invoke-static {}, Ljxe;->getInstance()Ljxe;
+
+    .line 310
+    move-result-object p1
+
+    .line 311
+    const-class v0, Lcom/tencent/mtt/boot/facade/ISplashService;
+
+    .line 313
+    invoke-virtual {p1, v0}, Ljxe;->getService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 316
+    move-result-object p1
+
+    .line 317
+    check-cast p1, Lcom/tencent/mtt/boot/facade/ISplashService;
+
+    .line 319
+    check-cast p1, Lcom/cloudview/phx/boot/splash/SplashServiceImpl;
+
+    .line 321
+    invoke-virtual {p1, p0}, Lcom/cloudview/phx/boot/splash/SplashServiceImpl;->a(Lcom/tencent/mtt/boot/facade/d;)V
+
+    .line 324
+    return-void
+.end method
+
+.method public onMainActivityCreatePre(Lcom/cloudview/activity/PHXActivityBase;)V
+    .registers 4
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 p0, 0x1
+
+    .line 2
+    sput-boolean p0, Lejc;->c:Z
+
+    .line 4
+    sput-boolean p0, Lejc;->d:Z
+
+    .line 6
+    invoke-virtual {p1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    .line 9
+    move-result-object p0
+
+    .line 10
+    if-eqz p0, :cond_1a
+
+    .line 12
+    const-string v0, "OPEN_STAT_WINDOW"
+
+    .line 14
+    const/4 v1, 0x0
+
+    .line 15
+    invoke-virtual {p0, v0, v1}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+
+    .line 18
+    move-result p0
+
+    .line 19
+    if-eqz p0, :cond_1a
+
+    .line 21
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getInstance()Lcom/cloudview/analyticskmm/AnalyticManager;
+
+    .line 24
+    invoke-static {p1}, Lcom/cloudview/analyticskmm/AnalyticManager;->showDebugWindow(Ljava/lang/Object;)V
+
+    .line 27
+    :cond_1a
+    return-void
+.end method
+
+.method public onMainActivityDestroy(Lcom/cloudview/activity/PHXActivityBase;)V
+    .registers 3
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget p0, Lcom/transsion/phoenix/MainProcBootAdapter;->sBlockType:I
+
+    .line 3
+    if-eqz p0, :cond_5
+
+    .line 5
+    return-void
+
+    .line 6
+    :cond_5
+    sget-object p0, La6h;->e:La6h;
+
+    .line 8
+    sget-object p0, La6h;->e:La6h;
+
+    .line 10
+    iget-object p0, p0, La6h;->b:Lev;
+
+    .line 12
+    if-eqz p0, :cond_10
+
+    .line 14
+    invoke-virtual {p0}, Lev;->B()V
+
+    .line 17
+    :cond_10
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 20
+    move-result-object p0
+
+    .line 21
+    iget-object p0, p0, Lp42;->d:Ljava/lang/Object;
+
+    .line 23
+    check-cast p0, Ldsc;
+
+    .line 25
+    sget-object v0, Lo42;->f:Lo42;
+
+    .line 27
+    invoke-virtual {p0, v0, p1}, Ldsc;->e(Lo42;Ljava/lang/Object;)V
+
+    .line 30
+    return-void
+.end method
+
+.method public onMainActivityDispatchTouchEvent(Lcom/cloudview/activity/PHXActivityBase;Landroid/view/MotionEvent;)Z
+    .registers 3
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget-object p0, La6h;->e:La6h;
+
+    .line 3
+    invoke-virtual {p0}, La6h;->d()Z
+
+    .line 6
+    move-result p0
+
+    .line 7
+    if-nez p0, :cond_14
+
+    .line 9
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 12
+    move-result-object p0
+
+    .line 13
+    invoke-virtual {p0}, Lp42;->p()Z
+
+    .line 16
+    move-result p0
+
+    .line 17
+    if-nez p0, :cond_14
+
+    .line 19
+    const/4 p0, 0x1
+
+    .line 20
+    return p0
+
+    .line 21
+    :cond_14
+    const/4 p0, 0x0
+
+    .line 22
+    return p0
+.end method
+
+.method public onMainActivityKeyDown(Lcom/cloudview/activity/PHXActivityBase;ILandroid/view/KeyEvent;)Z
+    .registers 4
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    iget-object p0, p0, Lp42;->e:Ljava/lang/Object;
+
+    .line 7
+    check-cast p0, Lq42;
+
+    .line 9
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    sget-object p0, La6h;->e:La6h;
+
+    .line 14
+    invoke-virtual {p0}, La6h;->d()Z
+
+    .line 17
+    move-result p0
+
+    .line 18
+    if-eqz p0, :cond_15
+
+    .line 20
+    const/4 p0, 0x1
+
+    .line 21
+    return p0
+
+    .line 22
+    :cond_15
+    const/4 p0, 0x0
+
+    .line 23
+    return p0
+.end method
+
+.method public onMainActivityKeyEvent(Lcom/cloudview/activity/PHXActivityBase;Landroid/view/KeyEvent;)Z
+    .registers 3
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    iget-object p0, p0, Lp42;->e:Ljava/lang/Object;
+
+    .line 7
+    check-cast p0, Lq42;
+
+    .line 9
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    const/4 p0, 0x0
+
+    .line 13
+    return p0
+.end method
+
+.method public onMainActivityKeyUp(Lcom/cloudview/activity/PHXActivityBase;ILandroid/view/KeyEvent;)Z
+    .registers 4
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    iget-object p0, p0, Lp42;->e:Ljava/lang/Object;
+
+    .line 7
+    check-cast p0, Lq42;
+
+    .line 9
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    sget-object p0, La6h;->e:La6h;
+
+    .line 14
+    invoke-virtual {p0}, La6h;->d()Z
+
+    .line 17
+    move-result p0
+
+    .line 18
+    if-eqz p0, :cond_15
+
+    .line 20
+    const/4 p0, 0x1
+
+    .line 21
+    return p0
+
+    .line 22
+    :cond_15
+    const/4 p0, 0x0
+
+    .line 23
+    return p0
+.end method
+
+.method public onMainActivityNewIntent(Lcom/cloudview/activity/PHXActivityBase;Landroid/content/Intent;)V
+    .registers 4
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget-object p0, Ls42;->d:Ls42;
+
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 9
+    move-result-object p0
+
+    .line 10
+    iget-object v0, p0, Lp42;->e:Ljava/lang/Object;
+
+    .line 12
+    check-cast v0, Lq42;
+
+    .line 14
+    iput-object p2, v0, Lq42;->c:Landroid/content/Intent;
+
+    .line 16
+    invoke-virtual {p1}, Landroid/app/Activity;->getReferrer()Landroid/net/Uri;
+
+    .line 19
+    move-result-object p1
+
+    .line 20
+    if-eqz p1, :cond_21
+
+    .line 22
+    iget-object v0, p0, Lp42;->e:Ljava/lang/Object;
+
+    .line 24
+    check-cast v0, Lq42;
+
+    .line 26
+    iget-object v0, v0, Lq42;->e:Lwue;
+
+    .line 28
+    invoke-virtual {p1}, Landroid/net/Uri;->getHost()Ljava/lang/String;
+
+    .line 31
+    move-result-object p1
+
+    .line 32
+    iput-object p1, v0, Lwue;->c:Ljava/lang/Object;
+
+    .line 34
+    :cond_21
+    new-instance p1, Landroid/os/Message;
+
+    .line 36
+    invoke-direct {p1}, Landroid/os/Message;-><init>()V
+
+    .line 39
+    const/16 v0, 0x3ea
+
+    .line 41
+    iput v0, p1, Landroid/os/Message;->what:I
+
+    .line 43
+    iput-object p2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    .line 45
+    iget-object p0, p0, Lp42;->d:Ljava/lang/Object;
+
+    .line 47
+    check-cast p0, Ldsc;
+
+    .line 49
+    invoke-virtual {p0, p1}, Ldsc;->j(Landroid/os/Message;)V
+
+    .line 52
+    return-void
+.end method
+
+.method public onMainActivityPause(Lcom/cloudview/activity/PHXActivityBase;)V
+    .registers 4
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget p0, Lcom/transsion/phoenix/MainProcBootAdapter;->sBlockType:I
+
+    .line 3
+    if-eqz p0, :cond_5
+
+    .line 5
+    return-void
+
+    .line 6
+    :cond_5
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 9
+    move-result-object p0
+
+    .line 10
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    new-instance v0, Landroid/os/Message;
+
+    .line 15
+    invoke-direct {v0}, Landroid/os/Message;-><init>()V
+
+    .line 18
+    const/16 v1, 0x3eb
+
+    .line 20
+    iput v1, v0, Landroid/os/Message;->what:I
+
+    .line 22
+    iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    .line 24
+    iget-object p0, p0, Lp42;->d:Ljava/lang/Object;
+
+    .line 26
+    check-cast p0, Ldsc;
+
+    .line 28
+    invoke-virtual {p0, v0}, Ldsc;->j(Landroid/os/Message;)V
+
+    .line 31
+    return-void
+.end method
+
+.method public onMainActivityRestart(Lcom/cloudview/activity/PHXActivityBase;)V
+    .registers 2
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-virtual {p1}, Lcom/cloudview/framework/base/FragmentActivity;->getCurFragment()Landroid/app/Fragment;
+
+    .line 4
+    return-void
+.end method
+
+.method public onMainActivityResult(Lcom/cloudview/activity/PHXActivityBase;)Z
+    .registers 2
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget p0, Lcom/transsion/phoenix/MainProcBootAdapter;->sBlockType:I
+
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    if-eqz p0, :cond_6
+
+    .line 6
+    return p1
+
+    .line 7
+    :cond_6
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 10
+    move-result-object p0
+
+    .line 11
+    invoke-virtual {p0}, Lp42;->p()Z
+
+    .line 14
+    move-result p0
+
+    .line 15
+    if-nez p0, :cond_11
+
+    .line 17
+    return p1
+
+    .line 18
+    :cond_11
+    const/4 p0, 0x0
+
+    .line 19
+    return p0
+.end method
+
+.method public onMainActivityResume(Lcom/cloudview/activity/PHXActivityBase;)V
+    .registers 8
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget p0, Lcom/transsion/phoenix/MainProcBootAdapter;->sBlockType:I
+
+    .line 3
+    if-eqz p0, :cond_6
+
+    .line 5
+    goto/16 :goto_dd
+
+    .line 7
+    :cond_6
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 10
+    move-result-object p0
+
+    .line 11
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    new-instance v0, Landroid/os/Message;
+
+    .line 16
+    invoke-direct {v0}, Landroid/os/Message;-><init>()V
+
+    .line 19
+    const/16 v1, 0x3e9
+
+    .line 21
+    iput v1, v0, Landroid/os/Message;->what:I
+
+    .line 23
+    iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    .line 25
+    iget-object p0, p0, Lp42;->d:Ljava/lang/Object;
+
+    .line 27
+    check-cast p0, Ldsc;
+
+    .line 29
+    invoke-virtual {p0, v0}, Ldsc;->j(Landroid/os/Message;)V
+
+    .line 32
+    sget-object p0, Ls42;->d:Ls42;
+
+    .line 34
+    iget-boolean p1, p0, Ls42;->c:Z
+
+    .line 36
+    const/4 v0, 0x1
+
+    .line 37
+    if-eqz p1, :cond_de
+
+    .line 39
+    iget-boolean p1, p0, Ls42;->b:Z
+
+    .line 41
+    if-eqz p1, :cond_de
+
+    .line 43
+    invoke-static {}, Lgg1;->a()Lgg1;
+
+    .line 46
+    move-result-object p1
+
+    .line 47
+    const-string v1, "last_user_background_time"
+
+    .line 49
+    const-wide/16 v2, 0x0
+
+    .line 51
+    invoke-virtual {p1, v1, v2, v3}, Lyh2;->getLong(Ljava/lang/String;J)J
+
+    .line 54
+    move-result-wide v1
+
+    .line 55
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 58
+    move-result-wide v3
+
+    .line 59
+    sub-long/2addr v3, v1
+
+    .line 60
+    invoke-static {}, Lxlj;->m()Lxlj;
+
+    .line 63
+    move-result-object p1
+
+    .line 64
+    if-eqz p1, :cond_dd
+
+    .line 66
+    iget-object p1, p1, Lxlj;->h:Lwjj;
+
+    .line 68
+    if-eqz p1, :cond_dd
+
+    .line 70
+    check-cast p1, Llkj;
+
+    .line 72
+    invoke-virtual {p1}, Llkj;->e()Lzx8;
+
+    .line 75
+    move-result-object p1
+
+    .line 76
+    if-nez p1, :cond_4f
+
+    .line 78
+    goto/16 :goto_dd
+
+    .line 80
+    :cond_4f
+    invoke-static {}, Ljxe;->getInstance()Ljxe;
+
+    .line 83
+    move-result-object v1
+
+    .line 84
+    const-class v2, Lcom/tencent/mtt/browser/homepage/facade/IHomePageService;
+
+    .line 86
+    invoke-virtual {v1, v2}, Ljxe;->getService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 89
+    move-result-object v1
+
+    .line 90
+    check-cast v1, Lcom/tencent/mtt/browser/homepage/facade/IHomePageService;
+
+    .line 92
+    invoke-static {}, Ljxe;->getInstance()Ljxe;
+
+    .line 95
+    move-result-object v2
+
+    .line 96
+    const-class v5, Lcom/tencent/mtt/boot/facade/IBootService;
+
+    .line 98
+    invoke-virtual {v2, v5}, Ljxe;->getService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 101
+    move-result-object v2
+
+    .line 102
+    check-cast v2, Lcom/tencent/mtt/boot/facade/IBootService;
+
+    .line 104
+    check-cast v2, Lcom/cloudview/phx/boot/BootServiceImpl;
+
+    .line 106
+    invoke-virtual {v2}, Lcom/cloudview/phx/boot/BootServiceImpl;->f()Z
+
+    .line 109
+    move-result v2
+
+    .line 110
+    if-nez v2, :cond_70
+
+    .line 112
+    goto :goto_dd
+
+    .line 113
+    :cond_70
+    sget-object v2, Lyx8;->d:Lyx8;
+
+    .line 115
+    invoke-interface {p1, v2}, Lzx8;->isPage(Lyx8;)Z
+
+    .line 118
+    move-result p1
+
+    .line 119
+    if-eqz p1, :cond_98
+
+    .line 121
+    check-cast v1, Lcom/tencent/mtt/browser/homepage/home/proxy/HomePageProxy;
+
+    .line 123
+    invoke-virtual {v1, v0}, Lcom/tencent/mtt/browser/homepage/home/proxy/HomePageProxy;->i(I)Z
+
+    .line 126
+    move-result p1
+
+    .line 127
+    if-eqz p1, :cond_98
+
+    .line 129
+    invoke-static {v3, v4}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+
+    .line 132
+    move-result-object p0
+
+    .line 133
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getInstance()Lcom/cloudview/analyticskmm/AnalyticManager;
+
+    .line 136
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getCurrentUnitName()Ljava/lang/String;
+
+    .line 139
+    move-result-object p1
+
+    .line 140
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getInstance()Lcom/cloudview/analyticskmm/AnalyticManager;
+
+    .line 143
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getCurrentUnitScene()Ljava/lang/String;
+
+    .line 146
+    move-result-object v0
+
+    .line 147
+    const-string v1, "2"
+
+    .line 149
+    invoke-static {v1, p0, p1, v0}, Ls42;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 152
+    return-void
+
+    .line 153
+    :cond_98
+    const-wide/32 v1, 0x36ee80
+
+    .line 156
+    cmp-long p1, v3, v1
+
+    .line 158
+    if-lez p1, :cond_c5
+
+    .line 160
+    sget-object p1, Lcg2;->a:Ljava/util/ArrayList;
+
+    .line 162
+    const-string p1, "qb://home"
+
+    .line 164
+    invoke-static {p1}, Lnh9;->c0(Ljava/lang/String;)Lag2;
+
+    .line 167
+    move-result-object p1
+
+    .line 168
+    const/4 v1, 0x2
+
+    .line 169
+    iput v1, p1, Lag2;->b:I
+
+    .line 171
+    invoke-virtual {p1}, Lag2;->c()V
+
+    .line 174
+    invoke-static {v3, v4}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+
+    .line 177
+    move-result-object p1
+
+    .line 178
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getInstance()Lcom/cloudview/analyticskmm/AnalyticManager;
+
+    .line 181
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getCurrentUnitName()Ljava/lang/String;
+
+    .line 184
+    move-result-object v1
+
+    .line 185
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getInstance()Lcom/cloudview/analyticskmm/AnalyticManager;
+
+    .line 188
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getCurrentUnitScene()Ljava/lang/String;
+
+    .line 191
+    move-result-object v2
+
+    .line 192
+    const-string v3, "1"
+
+    .line 194
+    invoke-static {v3, p1, v1, v2}, Ls42;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 197
+    goto :goto_de
+
+    .line 198
+    :cond_c5
+    invoke-static {v3, v4}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+
+    .line 201
+    move-result-object p1
+
+    .line 202
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getInstance()Lcom/cloudview/analyticskmm/AnalyticManager;
+
+    .line 205
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getCurrentUnitName()Ljava/lang/String;
+
+    .line 208
+    move-result-object v1
+
+    .line 209
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getInstance()Lcom/cloudview/analyticskmm/AnalyticManager;
+
+    .line 212
+    invoke-static {}, Lcom/cloudview/analyticskmm/AnalyticManager;->getCurrentUnitScene()Ljava/lang/String;
+
+    .line 215
+    move-result-object v2
+
+    .line 216
+    const-string v3, "0"
+
+    .line 218
+    invoke-static {v3, p1, v1, v2}, Ls42;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 221
+    goto :goto_de
+
+    .line 222
+    :cond_dd
+    :goto_dd
+    return-void
+
+    .line 223
+    :cond_de
+    :goto_de
+    iput-boolean v0, p0, Ls42;->b:Z
+
+    .line 225
+    const/4 p1, 0x0
+
+    .line 226
+    iput-boolean p1, p0, Ls42;->c:Z
+
+    .line 228
+    return-void
+.end method
+
+.method public onMainActivitySearchRequested(Lcom/cloudview/activity/PHXActivityBase;)Z
+    .registers 3
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-virtual {p1}, Lcom/cloudview/framework/base/FragmentActivity;->getCurFragment()Landroid/app/Fragment;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    instance-of p0, p0, Lj82;
+
+    .line 7
+    const/4 p1, 0x0
+
+    .line 8
+    if-eqz p0, :cond_1d
+
+    .line 10
+    invoke-static {}, Ljxe;->getInstance()Ljxe;
+
+    .line 13
+    move-result-object p0
+
+    .line 14
+    const-class v0, Lcom/cloudview/search/ISearchPageService;
+
+    .line 16
+    invoke-virtual {p0, v0}, Ljxe;->getService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 19
+    move-result-object p0
+
+    .line 20
+    check-cast p0, Lcom/cloudview/search/ISearchPageService;
+
+    .line 22
+    if-eqz p0, :cond_1d
+
+    .line 24
+    const/4 p0, 0x0
+
+    .line 25
+    invoke-static {p1, p0, p0}, Lcom/cloudview/phx/search/SearchPageService;->a(ILcom/tencent/mtt/boot/facade/c;Landroid/graphics/Rect;)V
+
+    .line 28
+    const/4 p0, 0x1
+
+    .line 29
+    return p0
+
+    .line 30
+    :cond_1d
+    return p1
+.end method
+
+.method public onMainActivitySetContentView(Lcom/cloudview/activity/PHXActivityBase;I)V
+    .registers 4
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    const/4 v0, 0x0
+
+    .line 6
+    invoke-virtual {p0, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+
+    .line 9
+    move-result-object p0
+
+    .line 10
+    invoke-virtual {p1, p0}, Landroidx/appcompat/app/AppCompatActivity;->setContentView(Landroid/view/View;)V
+
+    .line 13
+    return-void
+.end method
+
+.method public onMainActivityStart(Landroid/app/Activity;)V
+    .registers 4
+    .param p1  # Landroid/app/Activity;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget p0, Lcom/transsion/phoenix/MainProcBootAdapter;->sBlockType:I
+
+    .line 3
+    if-eqz p0, :cond_5
+
+    .line 5
+    return-void
+
+    .line 6
+    :cond_5
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 9
+    move-result-object p0
+
+    .line 10
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    new-instance v0, Landroid/os/Message;
+
+    .line 15
+    invoke-direct {v0}, Landroid/os/Message;-><init>()V
+
+    .line 18
+    const/16 v1, 0x3ec
+
+    .line 20
+    iput v1, v0, Landroid/os/Message;->what:I
+
+    .line 22
+    iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    .line 24
+    iget-object p0, p0, Lp42;->d:Ljava/lang/Object;
+
+    .line 26
+    check-cast p0, Ldsc;
+
+    .line 28
+    invoke-virtual {p0, v0}, Ldsc;->j(Landroid/os/Message;)V
+
+    .line 31
+    return-void
+.end method
+
+.method public onMainActivityStop(Lcom/cloudview/activity/PHXActivityBase;)V
+    .registers 4
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget p0, Lcom/transsion/phoenix/MainProcBootAdapter;->sBlockType:I
+
+    .line 3
+    if-eqz p0, :cond_5
+
+    .line 5
+    return-void
+
+    .line 6
+    :cond_5
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 9
+    move-result-object p0
+
+    .line 10
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    new-instance v0, Landroid/os/Message;
+
+    .line 15
+    invoke-direct {v0}, Landroid/os/Message;-><init>()V
+
+    .line 18
+    const/16 v1, 0x3ed
+
+    .line 20
+    iput v1, v0, Landroid/os/Message;->what:I
+
+    .line 22
+    iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    .line 24
+    iget-object p0, p0, Lp42;->d:Ljava/lang/Object;
+
+    .line 26
+    check-cast p0, Ldsc;
+
+    .line 28
+    invoke-virtual {p0, v0}, Ldsc;->j(Landroid/os/Message;)V
+
+    .line 31
+    return-void
+.end method
+
+method public onMainActivityWindowFocusChanged(Lcom/cloudview/activity/PHXActivityBase;Z)V
+    .registers 6
+    .param p1  # Lcom/cloudview/activity/PHXActivityBase;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget p0, Lcom/transsion/phoenix/MainProcBootAdapter;->sBlockType:I
+
+    .line 3
+    if-eqz p0, :cond_5
+
+    .line 5
+    goto :goto_5f
+
+    .line 6
+    :cond_5
+    invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    .line 9
+    move-result-object p0
+
+    .line 10
+    sget-boolean v0, Lvt4;->s:Z
+
+    .line 12
+    const/4 v1, 0x1
+
+    .line 13
+    if-eqz v0, :cond_f
+
+    .line 15
+    goto :goto_21
+
+    .line 16
+    :cond_f
+    new-instance v0, Landroid/graphics/Rect;
+
+    .line 18
+    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
+
+    .line 21
+    invoke-virtual {p0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    .line 24
+    move-result-object p0
+
+    .line 25
+    invoke-virtual {p0, v0}, Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
+
+    .line 28
+    iget p0, v0, Landroid/graphics/Rect;->top:I
+
+    .line 30
+    if-lez p0, :cond_21
+
+    .line 32
+    sput-boolean v1, Lvt4;->s:Z
+
+    .line 34
+    :cond_21
+    :goto_21
+    invoke-virtual {p1}, Lcom/cloudview/framework/base/FragmentActivity;->getCurFragment()Landroid/app/Fragment;
+
+    .line 37
+    move-result-object p0
+
+    .line 38
+    instance-of p1, p0, Lou7;
+
+    .line 40
+    if-eqz p1, :cond_2c
+
+    .line 42
+    check-cast p0, Lou7;
+
+    .line 44
+    goto :goto_2d
+
+    .line 45
+    :cond_2c
+    const/4 p0, 0x0
+
+    .line 46
+    :goto_2d
+    if-eqz p0, :cond_46
+
+    .line 48
+    if-eqz p2, :cond_46
+
+    .line 50
+    iget-boolean p1, p0, Lou7;->f:Z
+
+    .line 52
+    if-nez p1, :cond_46
+
+    .line 54
+    iput-boolean v1, p0, Lou7;->f:Z
+
+    .line 56
+    invoke-static {}, Lhg2;->e()Lwy0;
+
+    .line 59
+    move-result-object p1
+
+    .line 60
+    new-instance v0, Lnu7;
+
+    .line 62
+    const/4 v1, 0x0
+
+    .line 63
+    invoke-direct {v0, p0, v1}, Lnu7;-><init>(Lou7;I)V
+
+    .line 66
+    const-wide/16 v1, 0x32
+
+    .line 68
+    invoke-virtual {p1, v0, v1, v2}, Lwy0;->a(Ljava/lang/Runnable;J)V
+
+    .line 71
+    :cond_46
+    invoke-static {}, Lp42;->m()Lp42;
+
+    .line 74
+    move-result-object p0
+
+    .line 75
+    invoke-virtual {p0}, Lp42;->p()Z
+
+    .line 78
+    move-result p0
+
+    .line 79
+    if-eqz p0, :cond_5f
+
+    .line 81
+    if-eqz p2, :cond_5f
+
+    .line 83
+    invoke-static {}, Lxlj;->m()Lxlj;
+
+    .line 86
+    move-result-object p0
+
+    .line 87
+    if-eqz p0, :cond_5f
+
+    .line 89
+    iget-object p0, p0, Lxlj;->d:Lg92;
+
+    .line 91
+    if-eqz p0, :cond_5f
+
+    .line 93
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
+
+    .line 96
+    :cond_5f
+    :goto_5f
+    return-void
+.end method
+
+
